@@ -1,0 +1,391 @@
+            /*      Pre-loader start      */
+
+            #loader {
+                background-color: black;
+              }
+              
+              @-webkit-keyframes spin {
+                0% { -webkit-transform: rotate(0deg); }
+                100% { -webkit-transform: rotate(360deg); }
+              }
+              
+              @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+              }
+
+
+
+              /* Add animation to "page content" */
+
+                .animate-bottom {
+                    position: relative;
+                    -webkit-animation-name: animatebottom;
+                    -webkit-animation-duration: 1s;
+                    animation-name: animatebottom;
+                    animation-duration: 1s
+                }
+                
+                @-webkit-keyframes animatebottom {
+                    from { bottom:-100px; opacity:0 } 
+                    to { bottom:0px; opacity:1 }
+                }
+                
+                @keyframes animatebottom { 
+                    from{ bottom:-100px; opacity:0 } 
+                    to{ bottom:0; opacity:1 }
+                }
+                
+                #myDiv {
+                    display: none;
+                }
+                .center-body {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100vh;
+                    /****** center box
+                    width: 300px;
+                    height: 300px;
+                    border: solid 1px #aaa;
+                    ******/
+                }
+                
+                .loader-circle-29 {
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 50%;
+                    background: linear-gradient(90deg, #f00, #ff8000, #ffd500, #ff0, #d4ff00, #00ff2b, #0f5, #0fa, #0ff, #00d4ff, #007fff, #2a00ff, #f0a, #f00);
+                    animation: animateme-3 1s alternate ease-in-out infinite;
+                    display: inline-block;
+                    border: dashed 5px #202628;
+                }
+                .loader-circle-29:before {
+                    content: "";
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    right: 10px;
+                    bottom: 10px;
+                    border-radius: 50%;
+                    background-color: #202628;
+                    z-index: 1;
+                }
+                @keyframes animateme-3 {
+                    from {
+                        transform: rotate(0deg) scale(0.5);
+                    }
+                    to {
+                        transform: rotate(360deg) scale(1);
+                    }
+                }
+
+            /*  Pre-loader End   */
+
+
+            /*  Scroll Back To Top Button    */
+
+
+            
+            .my {
+                /* display: none; */
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color: red;
+                color: white;
+                cursor: pointer;
+                padding: 15px;
+                border-radius: 5px;
+            }
+            
+            .my:hover {
+                background-color: #555;
+            }
+
+                #myBtn {
+                    display: none;
+                    position: fixed;
+                    bottom: 20px;
+                    right: 30px;
+                    z-index: 99;
+                    font-size: 18px;
+                    border: none;
+                    outline: none;
+                    background-color: red;
+                    color: white;
+                    cursor: pointer;
+                    padding: 15px;
+                    border-radius: 5px;
+                }
+                
+                #myBtn:hover {
+                    background-color: #555;
+                }
+
+                *{scroll-behavior: smooth;}
+
+
+
+
+/*  Font     */
+
+.font{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.button{
+    height: 45px;
+ 
+    background-color: white;
+    color: black;
+    border: none;
+    transition: 1s;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+    border: none;
+    transition: 1s;
+}
+.button1{
+    height: 45px;
+  
+    background-color: white;
+    color: black;
+    border: none;
+    transition: 1s;
+}
+.button1:hover{
+    background-color: black;
+    color: white;
+    border: none;
+    transition: 1s;
+}
+
+
+.button2{
+    height: 45px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: 1s;
+}
+.button2:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    transition: 1s;
+}
+
+
+
+
+.backgroundclrwhite{
+    background-color: white;
+}
+
+
+
+.padding-top{
+    padding-top: 35px;
+}
+
+
+.margin-left{
+    margin-left: 25px;
+}
+
+
+.blacktext{
+    color: black;
+}
+.whitetext{
+    color: white;
+}
+
+
+
+
+/*  BACKGROUND - IMAGE  */
+
+.backgroundimage1{
+    background-image: url(img/recycled-shoe-store-hero-image-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.backgroundimage2{
+    background-image: url(img/102.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.backgroundimage3{
+    background-image: url(img/103.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.backgroundimage4{
+    background-image: url(img/104.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.backgroundimage5{
+    background-image: url(img/105.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.backgroundimage6{
+    background-image: url(img/106.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.backgroundimage7{
+    background-image: url(img/107.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.backgroundimage8{
+    background-image: url(img/016.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.backgroundimage9{
+    background-image: url(img/017.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.backgroundimage10{
+    background-image: url(img/108.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.backgroundimage11{
+    background-image: url(img/104.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.backgroundimage12{
+    background-image: url(img/109.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.backgroundimage13{
+    background-image: url(img/110.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.backgroundimage14{
+    background-image: url(img/111.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.backgroundimage15{
+    background-image: url(img/112.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.backgroundimage16{
+    background-image: url(img/113.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.backgroundimage17{
+    background-image: url(img/114.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.backgroundimage18{
+    background-image: url(img/028.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 1px dashed black;
+    border-radius: 70%;
+}
+.backgroundimage19{
+    background-image: url(img/032.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hide .view{
+    display: none;
+}
+
+.hide:hover .view{
+    display: block;
+}
+
+
+/* Quick View */
+
+.view{
+    height: 40px;
+    width: 100%;
+    background-color: #000000c9;
+    color: white;
+}
+
+
+
+
+                /*      Collection.html      */
+
+
+.button3{
+    height: 40px;
+    background-color: #6e7051;
+    color: white;
+    border: none;
+}
+.button3:hover{
+    background-color: black;
+    color: white;
+}
+
+.view1{
+    height: 40px;
+    width: 95%;
+    background-color: #000000c9;
+    color: white;
+}
+
+.hide .view1{
+    display: none;
+}
+.hide:hover .view1{
+    display: block;
+}
+
+
+
+
+.image{
+    transition: 1s;
+    
+}
+.image:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+    
+}
+
+
+
+
+/*  cursor pointer */
+
+.pointer{
+    cursor:pointer;
+}
+
+
+        
